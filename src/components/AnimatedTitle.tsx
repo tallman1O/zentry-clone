@@ -4,11 +4,13 @@ import gsap from "gsap";
 interface AnimatedTitleProps {
   title: string;
   containerClass?: string;
+  sectionId?: string;
 }
 
 export const AnimatedTitle = ({
   title,
   containerClass,
+
 }: AnimatedTitleProps) => {
   const containerRef = useRef(null);
 
